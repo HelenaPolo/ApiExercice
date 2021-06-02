@@ -1,0 +1,78 @@
+html{
+    height: 100%;
+    width: 100%;
+}
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    background-image: linear-gradient(pink, pink, sandybrown);
+}
+.container{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+#joke{
+    font-size: 1.5em;
+    z-index: 1;
+    background: wheat;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+#button{
+    border: 2px solid black;
+    border-radius: 10px;
+    background: sandybrown;
+    box-shadow: sienna 1px 2px 5px;
+    z-index: 1; 
+}
+#logo{
+    justify-items: center;
+    align-items: center;
+    overflow: hidden;
+    z-index: 1;
+}
+.background_toast{
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 800px;
+}
+.background_toast li{
+    position: absolute;
+    top: 80vh;
+    left: 45vw;
+    list-style-type: none;
+    margin: 50px;
+    padding: 10px;
+}
+.background_toast li:nth-child(1){
+    left: 55vw;
+    top: 70vh;
+}
+.background_toast li:nth-child(2){
+    left: 15vw;
+    top: 45vh;
+}
+.background_toast li:nth-child(3){
+    left: 80vw;
+    top: 1vh;
+}
+.background_toast li:nth-child(4){
+    left: 1vw;
+    top: 5vh;
+}
+.background_toast li:nth-child(5){
+    left: 89vw;
+    top: 85vh;
+}
+.background_toast li:nth-child(6){
+    left: 1vw;
+    top: 90vh;
+}
