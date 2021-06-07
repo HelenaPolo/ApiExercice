@@ -7,12 +7,24 @@ $(document).ready(function(){
   animateToast('#toast6');
   getJoke();
 });
-function getJoke(){
+/*function getJoke(){
   $.getJSON('https://my-bao-server.herokuapp.com/api/breadpuns', function(data){
     $("#joke").html(data + "<br>");
   });
-}
+}*/
 $("#button").click(getJoke);
+
+async function getJoke(){
+  fetch('https://my-bao-server.herokuapp.com/api/breadpuns', {
+  headers: {
+    Accept: "application/json"
+  }
+  })
+  .then (response => response.json())
+  .then (response=> {
+    $("#joke").html(response + "<br>");
+  });
+}
 
 function makeNewPosition(){    
   let height = $(window).height();
@@ -29,3 +41,4 @@ function animateToast(toastId){
     animateToast(toastId);        
   });
 };
+
